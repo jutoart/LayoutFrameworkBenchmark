@@ -26,6 +26,9 @@
 		24661D0A1F4EFFF5002CB883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24661D081F4EFFF5002CB883 /* LaunchScreen.storyboard */; };
 		639E5A2020DF62D700C6BCEA /* NKFrameLayoutKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E5A1F20DF62D700C6BCEA /* NKFrameLayoutKitView.swift */; };
 		BF3DC69820B560A400536177 /* FeedItemNotAutoLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DC69720B560A400536177 /* FeedItemNotAutoLayoutView.swift */; };
+		ED64F33822A8838000B3C25E /* FeedItemSwiftUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED64F33722A8838000B3C25E /* FeedItemSwiftUIHostingController.swift */; };
+		ED814D0822A747A4003FCA92 /* FeedItemSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED814D0722A747A4003FCA92 /* FeedItemSwiftUIView.swift */; };
+		ED814D0A22A749F6003FCA92 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED814D0922A749F6003FCA92 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		639E5A1F20DF62D700C6BCEA /* NKFrameLayoutKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKFrameLayoutKitView.swift; sourceTree = "<group>"; };
 		73BD901DE3512A23A7603899 /* Pods-LayoutFrameworkBenchmark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutFrameworkBenchmark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LayoutFrameworkBenchmark/Pods-LayoutFrameworkBenchmark.debug.xcconfig"; sourceTree = "<group>"; };
 		BF3DC69720B560A400536177 /* FeedItemNotAutoLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemNotAutoLayoutView.swift; sourceTree = "<group>"; };
+		ED64F33722A8838000B3C25E /* FeedItemSwiftUIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemSwiftUIHostingController.swift; sourceTree = "<group>"; };
+		ED814D0722A747A4003FCA92 /* FeedItemSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemSwiftUIView.swift; sourceTree = "<group>"; };
+		ED814D0922A749F6003FCA92 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 				2401BC9C1F4F041400788998 /* ManualLayout */,
 				BF3DC69620B5608000536177 /* NotAutoLayout */,
 				2401BC911F4F020600788998 /* PinLayout */,
+				ED814D0622A736D5003FCA92 /* SwiftUI */,
 				2401BC9F1F4F043800788998 /* UIStackView */,
 				639E5A1E20DF620D00C6BCEA /* NKFrameLayoutKit */,
 				2401BC751F4F018C00788998 /* BenchmarkViewController.swift */,
@@ -208,6 +215,16 @@
 			name = NotAutoLayout;
 			sourceTree = "<group>";
 		};
+		ED814D0622A736D5003FCA92 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				ED64F33722A8838000B3C25E /* FeedItemSwiftUIHostingController.swift */,
+				ED814D0722A747A4003FCA92 /* FeedItemSwiftUIView.swift */,
+				ED814D0922A749F6003FCA92 /* SwiftUIView.swift */,
+			);
+			name = SwiftUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +269,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -284,7 +302,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LayoutFrameworkBenchmark/Pods-LayoutFrameworkBenchmark-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LayoutFrameworkBenchmark/Pods-LayoutFrameworkBenchmark-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FlexLayout/FlexLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/LayoutKit/LayoutKit.framework",
 				"${BUILT_PRODUCTS_DIR}/NKFrameLayoutKit/NKFrameLayoutKit.framework",
@@ -303,7 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LayoutFrameworkBenchmark/Pods-LayoutFrameworkBenchmark-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LayoutFrameworkBenchmark/Pods-LayoutFrameworkBenchmark-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FB2DF4C2068AD4C560959816 /* [CP] Check Pods Manifest.lock */ = {
@@ -333,14 +351,17 @@
 			files = (
 				2401BCA11F4F044000788998 /* FeedItemUIStackView.swift in Sources */,
 				2401BC8B1F4F018C00788998 /* Stopwatch.swift in Sources */,
+				ED814D0A22A749F6003FCA92 /* SwiftUIView.swift in Sources */,
 				2401BC8F1F4F01D600788998 /* FeedItemLayoutKitView.swift in Sources */,
 				2401BC851F4F018C00788998 /* FeedItemData.swift in Sources */,
+				ED814D0822A747A4003FCA92 /* FeedItemSwiftUIView.swift in Sources */,
 				2401BC831F4F018C00788998 /* DataBinder.swift in Sources */,
 				2401BC961F4F022900788998 /* FeedItemPinLayoutView.swift in Sources */,
 				2401BC821F4F018C00788998 /* CollectionViewController.swift in Sources */,
 				2401BC9E1F4F042700788998 /* FeedItemManualView.swift in Sources */,
 				2401BC811F4F018C00788998 /* BenchmarkViewController.swift in Sources */,
 				BF3DC69820B560A400536177 /* FeedItemNotAutoLayoutView.swift in Sources */,
+				ED64F33822A8838000B3C25E /* FeedItemSwiftUIHostingController.swift in Sources */,
 				639E5A2020DF62D700C6BCEA /* NKFrameLayoutKitView.swift in Sources */,
 				2401BC9B1F4F03B300788998 /* ProfileCardLayout.swift in Sources */,
 				2401BC941F4F021F00788998 /* FeedItemFlexLayoutView.swift in Sources */,
@@ -413,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -466,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

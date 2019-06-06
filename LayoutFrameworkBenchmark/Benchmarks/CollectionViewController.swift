@@ -19,15 +19,17 @@ import UIKit
 /// of method sizzling would not work and bring into infinite loop if different view type
 /// uses `CollectionViewController` directly.
 ///
-@available(iOS 9, *)
-class CollectionViewControllerFeedItemUIStackView: CollectionViewController<FeedItemUIStackView> {}
 
 class CollectionViewControllerFeedItemAutoLayoutView: CollectionViewController<FeedItemAutoLayoutView> {}
 class CollectionViewControllerFeedItemLayoutKitView: CollectionViewController<FeedItemLayoutKitView> {}
-class CollectionViewControllerFeedItemManualView: CollectionViewController<FeedItemManualView> {}
+class CollectionViewControllerFeedItemManualView:
+    CollectionViewController<FeedItemManualView> {}
 class CollectionViewControllerFeedItemNotAutoLayoutView: CollectionViewController<FeedItemNotAutoLayoutView> {}
 class CollectionViewControllerFeedItemPinLayoutView: CollectionViewController<FeedItemPinLayoutView> {}
 class CollectionViewControllerFeedItemFlexLayoutView: CollectionViewController<FeedItemFlexLayoutView> {}
+class CollectionViewControllerFeedItemSwiftUIView:
+CollectionViewController<FeedItemSwiftUIView> {}
+class CollectionViewControllerFeedItemUIStackView: CollectionViewController<FeedItemUIStackView> {}
 class CollectionViewControllerFeedItemNKFrameLayoutKitView: CollectionViewController<NKFrameLayoutKitView> {}
 
 /// A UICollectionView controller where each cell's content view is a DataBinder.
