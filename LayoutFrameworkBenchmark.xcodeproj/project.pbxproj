@@ -27,7 +27,7 @@
 		639E5A2020DF62D700C6BCEA /* NKFrameLayoutKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E5A1F20DF62D700C6BCEA /* NKFrameLayoutKitView.swift */; };
 		BF3DC69820B560A400536177 /* FeedItemNotAutoLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3DC69720B560A400536177 /* FeedItemNotAutoLayoutView.swift */; };
 		ED64F33822A8838000B3C25E /* FeedItemSwiftUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED64F33722A8838000B3C25E /* FeedItemSwiftUIHostingController.swift */; };
-		ED814D0822A747A4003FCA92 /* FeedItemSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED814D0722A747A4003FCA92 /* FeedItemSwiftUIView.swift */; };
+		ED64F33A22A9C2E800B3C25E /* SwiftUIListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED64F33922A9C2E800B3C25E /* SwiftUIListView.swift */; };
 		ED814D0A22A749F6003FCA92 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED814D0922A749F6003FCA92 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +56,7 @@
 		73BD901DE3512A23A7603899 /* Pods-LayoutFrameworkBenchmark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayoutFrameworkBenchmark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LayoutFrameworkBenchmark/Pods-LayoutFrameworkBenchmark.debug.xcconfig"; sourceTree = "<group>"; };
 		BF3DC69720B560A400536177 /* FeedItemNotAutoLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemNotAutoLayoutView.swift; sourceTree = "<group>"; };
 		ED64F33722A8838000B3C25E /* FeedItemSwiftUIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemSwiftUIHostingController.swift; sourceTree = "<group>"; };
-		ED814D0722A747A4003FCA92 /* FeedItemSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemSwiftUIView.swift; sourceTree = "<group>"; };
+		ED64F33922A9C2E800B3C25E /* SwiftUIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListView.swift; sourceTree = "<group>"; };
 		ED814D0922A749F6003FCA92 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,7 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				ED64F33722A8838000B3C25E /* FeedItemSwiftUIHostingController.swift */,
-				ED814D0722A747A4003FCA92 /* FeedItemSwiftUIView.swift */,
+				ED64F33922A9C2E800B3C25E /* SwiftUIListView.swift */,
 				ED814D0922A749F6003FCA92 /* SwiftUIView.swift */,
 			);
 			name = SwiftUI;
@@ -354,11 +354,11 @@
 				ED814D0A22A749F6003FCA92 /* SwiftUIView.swift in Sources */,
 				2401BC8F1F4F01D600788998 /* FeedItemLayoutKitView.swift in Sources */,
 				2401BC851F4F018C00788998 /* FeedItemData.swift in Sources */,
-				ED814D0822A747A4003FCA92 /* FeedItemSwiftUIView.swift in Sources */,
 				2401BC831F4F018C00788998 /* DataBinder.swift in Sources */,
 				2401BC961F4F022900788998 /* FeedItemPinLayoutView.swift in Sources */,
 				2401BC821F4F018C00788998 /* CollectionViewController.swift in Sources */,
 				2401BC9E1F4F042700788998 /* FeedItemManualView.swift in Sources */,
+				ED64F33A22A9C2E800B3C25E /* SwiftUIListView.swift in Sources */,
 				2401BC811F4F018C00788998 /* BenchmarkViewController.swift in Sources */,
 				BF3DC69820B560A400536177 /* FeedItemNotAutoLayoutView.swift in Sources */,
 				ED64F33822A8838000B3C25E /* FeedItemSwiftUIHostingController.swift in Sources */,

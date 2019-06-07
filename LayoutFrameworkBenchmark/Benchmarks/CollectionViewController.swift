@@ -27,8 +27,6 @@ class CollectionViewControllerFeedItemManualView:
 class CollectionViewControllerFeedItemNotAutoLayoutView: CollectionViewController<FeedItemNotAutoLayoutView> {}
 class CollectionViewControllerFeedItemPinLayoutView: CollectionViewController<FeedItemPinLayoutView> {}
 class CollectionViewControllerFeedItemFlexLayoutView: CollectionViewController<FeedItemFlexLayoutView> {}
-class CollectionViewControllerFeedItemSwiftUIView:
-CollectionViewController<FeedItemSwiftUIView> {}
 class CollectionViewControllerFeedItemUIStackView: CollectionViewController<FeedItemUIStackView> {}
 class CollectionViewControllerFeedItemNKFrameLayoutKitView: CollectionViewController<NKFrameLayoutKitView> {}
 

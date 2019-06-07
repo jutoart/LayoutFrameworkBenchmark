@@ -8,5 +8,15 @@
 import UIKit
 import SwiftUI
 
-class FeedItemSwiftUIHostingController: UIHostingController<SwiftUIView> {
+class FeedItemSwiftUIHostingController: UIHostingController<SwiftUIListView> {
+
+    init(data: [FeedItemData]) {
+        let swiftUIListView = SwiftUIListView(feedItemList: data)
+        super.init(rootView: swiftUIListView)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        return nil
+    }
+
 }

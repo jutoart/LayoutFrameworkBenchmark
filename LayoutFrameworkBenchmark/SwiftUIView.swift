@@ -42,6 +42,6 @@ struct SwiftUIView : View {
                 Image("50x50")
                 Text(feedItemData.actorComment)
             }
-        }.padding(8)
+        }
     }
 }

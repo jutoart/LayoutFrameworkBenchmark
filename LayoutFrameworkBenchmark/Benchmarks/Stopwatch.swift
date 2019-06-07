@@ -47,12 +47,12 @@ class Stopwatch {
      Benchmarks the block and logs the result.
      The block is responsible for calling `resume()` and `pause()` on the stopwatch.
      */
-    static func benchmark(_ name: String, logResults: Bool, block: @escaping (_ stopwatch: Stopwatch) -> Void) -> Result {
+    static func benchmark(_ name: String, logResults: Bool, minIterationTime: CFAbsoluteTime, block: @escaping (_ stopwatch: Stopwatch) -> Void) -> Result {
         return autoreleasepool { () -> Result in 
             let stopwatch = Stopwatch(name: name)
 
             // Make sure we collect enough samples.
-            let minimumBenchmarkTime: CFAbsoluteTime = 1.0
+            let minimumBenchmarkTime: CFAbsoluteTime = minIterationTime
             let minimumIterationCount = 5
             
             var iterationCount = 1

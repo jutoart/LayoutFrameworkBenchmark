@@ -21,7 +21,7 @@ class BenchmarkViewController: UITableViewController {
 
         ViewControllerData(title: "SwiftUI", factoryBlock: { viewCount in
             let data = FeedItemData.generate(count: viewCount)
-            return CollectionViewControllerFeedItemSwiftUIView(data: data)
+            return FeedItemSwiftUIHostingController(data: data)
         }),
         
         ViewControllerData(title: "Auto Layout", factoryBlock: { viewCount in
@@ -157,7 +157,8 @@ class BenchmarkViewController: UITableViewController {
 
         for i in iterations {
             let description = "\(i)\tsubviews\t\(viewControllerData.title)"
-            let result = Stopwatch.benchmark(description, logResults: logResults, block: { (stopwatch: Stopwatch) -> Void in
+            let minIterationTime: CFAbsoluteTime = viewControllerData.title == "SwiftUI" ? 0.002 : 1.0
+            let result = Stopwatch.benchmark(description, logResults: logResults, minIterationTime: minIterationTime, block: { (stopwatch: Stopwatch) -> Void in
                 let vc = viewControllerData.factoryBlock(i)
                 stopwatch.resume()
                 vc?.view.layoutIfNeeded()
